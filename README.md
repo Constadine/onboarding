@@ -1,24 +1,23 @@
-This repository contains a collection of scripts for analyzing news articles. The scripts are organized into the following files:
+This repository includes scripts for analyzing news articles, organized as follows:
 
-src/fetch_data.py: This script fetches news articles from a specified API and saves them to a JSON file.
-src/preprocess.py: This script preprocesses the fetched news articles by cleaning and normalizing the text data.
-src/sentiment.py: This script analyzes the sentiment of the preprocessed news articles and adds sentiment scores to the data.
-src/topic_modeling.py: This script performs topic modeling on the preprocessed news articles using Latent Dirichlet Allocation (LDA).
-src/visualize.py: This script visualizes the results of the sentiment analysis and topic modeling.
-analysis.py: This script orchestrates the entire analysis pipeline, calling each of the above scripts in sequence to fetch, preprocess, analyze, and visualize the news articles.
-Usage
+- `fetch_data.py`: Retrieves news articles from an API and saves them as JSON.
+- `preprocess.py`: Cleans and normalizes text data of fetched news articles.
+- `sentiment.py`: Analyzes sentiment of preprocessed news articles and adds sentiment scores.
+- `topic_modeling.py`: Uses Latent Dirichlet Allocation (LDA) for topic modeling on preprocessed news articles.
+- `visualize.py`: Visualizes results from sentiment analysis and topic modeling.
 
-To run the analysis pipeline, simply execute the analysis.py script. This will fetch the news articles, preprocess the data, analyze the sentiment, perform topic modeling, and visualize the results.
+The `analysis.py` script coordinates the entire pipeline: fetching articles, preprocessing, sentiment analysis, topic modeling, and visualization.
 
-Dependencies
+**Usage:**
+Execute `analysis.py` to run the entire analysis pipeline, including fetching articles, preprocessing, sentiment analysis, topic modeling, and visualization.
 
-This repository requires the following dependencies to be installed:
+**Dependencies:**
+Ensure the following dependencies are installed:
+- `requests` for API requests
+- `json` for JSON data parsing
+- `spacy` for natural language processing
+- `gensim` for topic modeling
+- `matplotlib` for visualization
 
-requests for making API requests
-json for parsing JSON data
-spacy for natural language processing
-gensim for topic modeling
-matplotlib for visualization
-
-![Sample LDA Visualization](images/lda_visualization.png)
+![Sample LDA Visualization](images/lda_vis.png)
 
