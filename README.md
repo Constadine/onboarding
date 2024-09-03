@@ -20,5 +20,5 @@ spacy for natural language processing
 gensim for topic modeling
 matplotlib for visualization
 
-![Sample LDA Visualization](images/lda_visualization.png)
+![Sample LDA Visualization](images/lda_vis.png)
 
