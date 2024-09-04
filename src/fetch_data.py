@@ -4,7 +4,7 @@ from datetime import datetime
 from dotenv import load_dotenv
 import os
 
-def fetch_articles(url, output_filename):
+def fetch_articles(url: str, output_filename: str) -> tuple[str, list]:
     # Ensure the directory structure exists
     os.makedirs('data/raw', exist_ok=True)
     os.makedirs('data/processed', exist_ok=True)
